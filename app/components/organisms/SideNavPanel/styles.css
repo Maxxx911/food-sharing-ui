@@ -1,0 +1,21 @@
+.navbar-container {
+    padding: 65px 48px 48px 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px 34px;
+}
+
+.map-container {
+    display: flex;
+}
+
+.nav-title {
+    font-size: 44px;
+    color: var(--white-color);
+}

@@ -6,6 +6,16 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --prim-color: #F5EEF3;
+  --pot-pourri-color: #F7EAE9;
+  --feta-color: #F1FCF0;
+  --linen-color: #FCF8EF;
+  --aqua-haze-color: #EEF4F5;
+  --linen-dark-color: #FAEEE1;
+  --polar-color: #F0FCF9;
+  --selago-color: #EFF0FC;
+  --mine-shaft-color: #231F1F;
+  --white-color: #FFFFFF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,13 +27,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  height: 100vh;
 }
 
 @layer utilities {
