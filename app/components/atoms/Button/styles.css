@@ -1,0 +1,13 @@
+.button {
+  border-radius: 20px;
+  color: var(--mine-shaft-color);
+}
+
+.filled {
+  background-color: var(--prim-color);
+}
+
+.very-big {
+  height: 70px;
+  width: 285px;
+}

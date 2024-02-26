@@ -1,21 +1,32 @@
 .navbar-container {
-    padding: 65px 48px 48px 75px;
-    display: flex;
-    flex-direction: column;
+  padding: 65px 48px 75px 48px;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-container {
-    display: flex;
-    flex-direction: column;
-
-    padding: 0px 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 34px;
 }
 
 .map-container {
-    display: flex;
+  display: flex;
 }
 
 .nav-title {
-    font-size: 44px;
-    color: var(--white-color);
+  font-size: 44px;
+  color: var(--white-color);
+}
+
+.user-container {
+  display: flex;
+  margin-top: 58px;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-container-button {
+  margin-top: 125px;
 }

@@ -18,7 +18,7 @@ const config: Config = {
         "polar-color": "var(--polar-color)",
         "selago-color": "var(--selago-color)",
         "mine-shaft-color": "var(--mine-shaft-color)",
-        "whit-color": "var(--white-color)"
+        "white-color": "var(--white-color)"
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
