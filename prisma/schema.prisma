@@ -11,8 +11,49 @@ datasource db {
 }
 
 model User {
-  id       Int     @id @default(autoincrement())
-  email    String  @unique
+  id       Int      @id @default(autoincrement())
+  email    String   @unique
   password String
-  name     String?
+  foods    Food[]
+  profile  Profile?
+}
+
+model Profile {
+  id                 Int       @id @default(autoincrement())
+  adress             String?
+  name               String
+  rate               Decimal   @default(5.0)
+  availableTimeStart DateTime?
+  availableTimeEnd   DateTime?
+  contactNumber      String?
+
+  user   User @relation(fields: [userId], references: [id])
+  userId Int  @unique
+}
+
+model Food {
+  id              Int     @id @default(autoincrement())
+  title           String
+  description     String?
+  shotDescription String?
+  isActive        Boolean
+
+  user   User             @relation(fields: [userId], references: [id])
+  userId Int
+  types  FoodOnFoodType[]
+}
+
+model FoodOnFoodType {
+  food       Food     @relation(fields: [foodId], references: [id])
+  foodId     Int
+  foodType   FoodType @relation(fields: [foodTypeId], references: [id])
+  foodTypeId Int
+
+  @@id([foodId, foodTypeId])
+}
+
+model FoodType {
+  id    Int              @id @default(autoincrement())
+  label String
+  foods FoodOnFoodType[]
 }
