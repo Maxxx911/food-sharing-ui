@@ -5,11 +5,11 @@ import { TextListProp } from './type';
 
 const TextList: FC<TextListProp> = ({ items }) => {
   return (
-    <div className="list-items-container">
+    <ul className="list-items-container">
       {items.map((item) => (
         <TextListItem key={item.title as Key} {...item} />
       ))}
-    </div>
+    </ul>
   );
 };
 

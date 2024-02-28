@@ -16,13 +16,13 @@
 }
 
 .nav-title {
-  font-size: 44px;
+  font-size: 30px;
   color: var(--white-color);
 }
 
 .user-container {
   display: flex;
-  margin-top: 58px;
+  margin-top: 18px;
   justify-content: center;
   align-items: center;
 }
